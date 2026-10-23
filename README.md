@@ -6,6 +6,10 @@ The journal records evidence supplied by its user. It does not prove that a chan
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Local SEO Change Journal](https://seo-for-tradespeople.github.io/local-seo-change-journal/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.
