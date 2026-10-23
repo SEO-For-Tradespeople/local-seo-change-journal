@@ -3,9 +3,10 @@
   "org": "SEO-For-Tradespeople",
   "brand": "SEO for Tradespeople",
   "slug": "local-seo-change-journal",
-  "title": "Local SEO Change Journal",
+  "title": "SEO Enquiry Tracker & Monthly Planner",
   "profile": "Ongoing managed SEO implementation for trade businesses, with clear work records. Operated by JW Digital Services Ltd.",
-  "accent": "#1b5146",
-  "tint": "#e7f4ed",
-  "summary": "Keep local SEO implementation records, evidence and follow-up observations in a readable change journal."
+  "accent": "#e46c32",
+  "tint": "#e2e8d2",
+  "summary": "Record enquiries, quotes and jobs, compare a previous month and decide what to work on next.",
+  "brandMark": "<svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M24 45S7 29 7 19a17 17 0 0 1 34 0c0 10-17 26-17 26Z\"/><circle cx=\"24\" cy=\"19\" r=\"6\"/></svg>"
 }

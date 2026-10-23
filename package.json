@@ -1,7 +1,7 @@
 {
   "name": "local-seo-change-journal",
-  "version": "0.1.0",
-  "description": "Keep local SEO implementation records, evidence and follow-up observations in a readable change journal.",
+  "version": "0.2.0",
+  "description": "Record enquiries, quotes and jobs, compare a previous month and decide what to work on next.",
   "type": "module",
   "private": false,
   "license": "MIT",

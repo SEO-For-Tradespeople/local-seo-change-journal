@@ -1,68 +1,49 @@
-# Local SEO Change Journal
+# SEO Enquiry Tracker & Monthly Planner
 
-Local SEO Change Journal helps you keep a clear record of ongoing website and local-search work. Separate planned work, completed changes, checks and later observations in one readable report.
+Record enquiries, quotes and jobs, compare a previous month and decide what to work on next.
 
-The journal records evidence supplied by its user. It does not prove that a change caused a ranking or enquiry increase. Maintained by [SEO for Tradespeople](https://seofortradespeople.co.uk/), operated by JW Digital Services Ltd.
+**For trade businesses investing in ongoing SEO. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://seo-for-tradespeople.github.io/local-seo-change-journal/) · [See a fictional worked example](https://seo-for-tradespeople.github.io/local-seo-change-journal/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Local SEO Change Journal](https://seo-for-tradespeople.github.io/local-seo-change-journal/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Create my monthly review** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+A simple monthly review you can save alongside your work records.
+
+## What to expect
+
+Use counts from the same source and time period. Track each enquiry once. This is a business record, not a claim that SEO caused the result.
+
+Monthly counts can change for many reasons. This tool does not connect to analytics, identify an acquisition source or attribute results to SEO.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [SEO for Tradespeople](https://seofortradespeople.co.uk/). The tool is maintained by SEO for Tradespeople, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-Supply business, asOf, changes [{id,date,url,change_type,reason,evidence_ref,owner,status,follow_up_date}] and observations [{source,period,value,note}]. status is planned/implemented/verified/rolled back. Verified needs check_ref. Observations never become causal claims.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-Flat collections can also be imported with `--csv data.csv --context context.json --key items` (replace `items` with the documented collection). Nested structures use JSON. See `node cli.mjs --help`.
-
-## Worked example
-
-Use a fictional plumbing firm's six-week journal: a corrected phone link, an approved service explanation, an unfinished profile-information review, a deployed change awaiting verification and a rollback. Include a synthetic traffic observation with a note that several other factors changed during the period. The generated report must not say that one action caused the traffic movement.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Status changes follow the documented model. Verified work requires an actual check reference.
-- Follow-up dates produce reminders, not false completion. Rollbacks remain visible in the chronology.
-- Missing measurements remain missing; blank values never become zero or an improvement percentage.
-- Observation labels preserve source and date range. Reports contain no automatic causal claims or ranking guarantees.
-- Public examples and screenshots contain only synthetic data. Exports handle markup, formula-like fields and chronology safely.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/SEO-For-Tradespeople/local-seo-change-journal/issues) for a reproducible bug and [Discussions](https://github.com/SEO-For-Tradespeople/local-seo-change-journal/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
-
-## CSV example
-
-```sh
-node cli.mjs --csv examples/input.csv --context examples/context.json --key changes --format html --output csv-report.html
-```
-
-The context holds the root settings; the CSV holds the flat collection. Explicit booleans use `true` or `false`. Nested data uses JSON.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/SEO-For-Tradespeople/local-seo-change-journal/discussions/1).
