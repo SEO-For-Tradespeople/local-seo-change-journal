@@ -1,0 +1,76 @@
+{
+  "business": "Example Plumbing / fictional journal",
+  "asOf": "2026-10-23",
+  "changes": [
+    {
+      "id": "1",
+      "date": "2026-09-15",
+      "url": "/contact",
+      "change_type": "Phone link",
+      "reason": "Corrected the supplied call destination.",
+      "evidence_ref": "Synthetic diff 001",
+      "owner": "Editor",
+      "status": "verified",
+      "check_ref": "Synthetic browser check 001",
+      "follow_up_date": "2026-10-01"
+    },
+    {
+      "id": "2",
+      "date": "2026-09-25",
+      "url": "/services",
+      "change_type": "Service explanation",
+      "reason": "Published approved scope wording.",
+      "evidence_ref": "Synthetic diff 002",
+      "owner": "Editor",
+      "status": "implemented",
+      "follow_up_date": "2026-10-25"
+    },
+    {
+      "id": "3",
+      "date": "2026-10-01",
+      "url": "Profile record",
+      "change_type": "Profile information review",
+      "reason": "Awaiting owner approval.",
+      "evidence_ref": "",
+      "owner": "Owner",
+      "status": "planned",
+      "follow_up_date": "2026-10-15"
+    },
+    {
+      "id": "4",
+      "date": "2026-10-08",
+      "url": "/about",
+      "change_type": "About text",
+      "reason": "Published the approved operator explanation; recheck pending.",
+      "evidence_ref": "Synthetic diff 003",
+      "owner": "Editor",
+      "status": "implemented",
+      "follow_up_date": "2026-10-20"
+    },
+    {
+      "id": "5",
+      "date": "2026-10-15",
+      "url": "/contact",
+      "change_type": "Layout rollback",
+      "reason": "Restored earlier spacing after a display issue.",
+      "evidence_ref": "Synthetic rollback 004",
+      "owner": "Editor",
+      "status": "rolled back",
+      "follow_up_date": null
+    }
+  ],
+  "observations": [
+    {
+      "source": "Synthetic traffic export",
+      "period": "2026-09-15 to 2026-10-23",
+      "value": 120,
+      "note": "Illustrative only. Several factors changed; no causal claim."
+    },
+    {
+      "source": "Enquiry records",
+      "period": "2026-10",
+      "value": null,
+      "note": "Not measured in this example."
+    }
+  ]
+}

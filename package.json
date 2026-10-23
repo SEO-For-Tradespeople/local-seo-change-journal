@@ -1,0 +1,22 @@
+{
+  "name": "local-seo-change-journal",
+  "version": "0.1.0",
+  "description": "Keep local SEO implementation records, evidence and follow-up observations in a readable change journal.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node --test && node scripts/build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEO-For-Tradespeople/local-seo-change-journal.git"
+  },
+  "homepage": "https://seofortradespeople.co.uk/"
+}

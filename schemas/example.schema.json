@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local SEO Change Journal example structure",
+  "description": "Structural guide to the supplied example. Runtime validation enforces supported states, publication gates and cross-field rules.",
+  "type": "object",
+  "properties": {
+    "business": {
+      "type": "string"
+    },
+    "asOf": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "evidence_ref": {
+            "type": "string"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "check_ref": {
+            "type": "string"
+          },
+          "follow_up_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "date",
+          "url",
+          "change_type",
+          "reason",
+          "evidence_ref",
+          "owner",
+          "status",
+          "follow_up_date"
+        ]
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "period",
+          "value",
+          "note"
+        ]
+      }
+    }
+  },
+  "required": [
+    "business",
+    "asOf",
+    "changes",
+    "observations"
+  ]
+}

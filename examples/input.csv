@@ -1,0 +1,6 @@
+"id","date","url","change_type","reason","evidence_ref","owner","status","check_ref","follow_up_date"
+"1","2026-09-15","/contact","Phone link","Corrected the supplied call destination.","Synthetic diff 001","Editor","verified","Synthetic browser check 001","2026-10-01"
+"2","2026-09-25","/services","Service explanation","Published approved scope wording.","Synthetic diff 002","Editor","implemented","","2026-10-25"
+"3","2026-10-01","Profile record","Profile information review","Awaiting owner approval.","","Owner","planned","","2026-10-15"
+"4","2026-10-08","/about","About text","Published the approved operator explanation; recheck pending.","Synthetic diff 003","Editor","implemented","","2026-10-20"
+"5","2026-10-15","/contact","Layout rollback","Restored earlier spacing after a display issue.","Synthetic rollback 004","Editor","rolled back","",""
